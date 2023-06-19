@@ -1,3 +1,5 @@
+import streamlit as st
+import pickle
 # 设置页面样式
 st.set_page_config(page_title='Heart Disease Prediction', page_icon=':heart:', layout='wide')
 
@@ -22,8 +24,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-import streamlit as st
-import pickle
+
 
 # 添加标题
 st.title('Heart Disease Prediction')
