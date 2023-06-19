@@ -27,7 +27,7 @@ st.markdown("""
 
 
 # 添加标题
-st.title('Heart Disease Prediction')
+st.title('心脏疾病预测')
 
 # 创建模型选择下拉框
 model_names = ['决策树模型', '随机森林模型']  # 模型的名称列表
@@ -137,9 +137,9 @@ if st.button('Predict 预测'):
     # 显示预测结果
     st.subheader('Prediction 预测结果')
     if prediction == 0:
-        st.write('Congratulations! You are not at risk of heart disease.恭喜！您没有心脏病的风险。')
+        st.write('Congratulations! You are not at risk of heart disease.恭喜！您没有患心脏疾病的风险。')
     else:
-        st.write('You are at risk of heart disease. Please consult a doctor.您有患心脏病的风险，请咨询医生。')
+        st.write('You are at risk of heart disease. Please consult a doctor.您有患心脏疾病的风险，请尽快咨询医生。')
 
     st.subheader('Prediction Probability 预测概率')
     st.write(f"Not at risk 无风险: {prediction_proba[0] * 100:.2f}%")
@@ -162,7 +162,7 @@ footer = """
         <div class='container'>
         <img src='https://avatars.githubusercontent.com/u/76982031?s=200&v=4' width="50" height="50">
         <div class='logo-text'>
-        Made by ChatMind AI
+        Made by 康景明
         </div>
         </div>
         """
