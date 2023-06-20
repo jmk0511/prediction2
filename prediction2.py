@@ -40,16 +40,16 @@ with open(model_file, 'rb') as file:
 
 # 创建用户输入表单
 st.header('Heart Disease Prediction')
-age = float(st.number_input('Age 年龄'))
+age = st.number_input('Age 年龄')
 sex = st.selectbox('Sex 性别 ', ['Male 男', 'Female 女'])
 chest_pain_type = st.selectbox('Chest Pain Type 胸痛类型', ['Typical Angina 典型心绞痛', 'Atypical Angina 非典型心绞痛', 'Non-anginal Pain 非神经疼痛', 'Asymptomatic 无症状'])
-resting_bp = float(st.number_input('Resting Blood Pressure 休息血压'))
-cholesterol = float(st.number_input('Cholesterol 血清胆固醇'))
+resting_bp = st.number_input('Resting Blood Pressure 休息血压')
+cholesterol = st.number_input('Cholesterol 血清胆固醇')
 fasting_bs = st.selectbox('Fasting Blood Sugar 禁食血糖', ['Lower than 120mg/dl 低于 120mg/dl', 'Greater than 120mg/dl 高于 120mg/dl'])
 resting_ecg = st.selectbox('Resting ECG 静息心电图结果', ['Normal 正常', 'ST-T wave abnormality 有ST-T波异常', 'Left ventricular hypertrophy 左心室肥大'])
-max_hr = float(st.number_input('Maximum Heart Rate 最大心率'))
+max_hr = st.number_input('Maximum Heart Rate 最大心率')
 exercise_angina = st.selectbox('Exercise Induced Angina 运动引起心绞痛', ['No 无', 'Yes 是'])
-old_peak = float(st.number_input('ST Depression induced by exercise relative to rest 相对于休息来说运动引起的ST段抑制'))
+old_peak = st.number_input('ST Depression induced by exercise relative to rest 相对于休息来说运动引起的ST段抑制')
 st_slope = st.selectbox('ST Slope 峰运动ST段的坡度', ['Upsloping 向上倾斜', 'Flat 平', 'Downsloping 向下倾斜'])
 
 # 处理用户输入数据
