@@ -30,7 +30,7 @@ st.markdown("""
 st.title('关于身体健康：心脏疾病方面预测')
 
 # 创建模型选择下拉框
-model_names = ['决策树模型', '逻辑回归模型','随机森林模型','支持向量机模型']  # 模型的名称列表
+model_names = ['决策树模型', '逻辑回归模型','随机森林模型']  # 模型的名称列表
 model_selectbox = st.sidebar.selectbox('Select Model', model_names)
 
 # 根据模型名称加载对应的模型文件
