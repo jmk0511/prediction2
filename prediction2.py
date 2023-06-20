@@ -63,7 +63,7 @@ st_slope_mapping = {'Upsloping 向上倾斜': 1, 'Flat 平': 0, 'Downsloping 向
 st_slope = st_slope_mapping[st_slope]
 fasting_bs = 1 if fasting_bs == 'Greater than 120mg/dl 高于 120mg/dl' else 0
 
-if resting_bp <= 0 or cholesterol <= 0 or max_hr <= 0:
+if  age <= 0 or resting_bp <= 0 or cholesterol <= 0 or max_hr <= 0:
     st.error('错误，请重新填写')
 
 def divide_Age(age):
